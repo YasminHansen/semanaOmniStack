@@ -1,7 +1,7 @@
-const express = require('express');
+var express = require('express');
 const routes = require('./routes');
-
-const app = express();
+var cors = require('cors');
+var app = express();
 
 app.use(cors());
 app.use(express.json()); //vir antes das rotas
